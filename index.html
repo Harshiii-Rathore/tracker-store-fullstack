@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Tracker Store</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <body>
+
+  <!-- HEADER -->
+  <header class="header">
+
+    <nav class="navbar container">
+
+      <div class="logo">
+        TrackerStore
+      </div>
+
+      <ul class="nav-links">
+        <li><a href="#">Features</a></li>
+        <li><a href="#">Dashboard</a></li>
+        <li><a href="#">Pricing</a></li>
+      </ul>
+
+      <button class="nav-btn">
+        Get Started
+      </button>
+
+    </nav>
+
+  </header>
+
+  <!-- HERO SECTION -->
+
+  <section class="hero">
+
+    <div class="hero-content container">
+
+  <!-- LEFT SIDE -->
+
+  <div class="hero-text">
+
+    <p class="tag">
+      AI Powered Productivity
+    </p>
+
+    <h1>
+      Your Smart Reminder System That Learns Your Routine
+    </h1>
+
+    <p class="hero-description">
+      Tracker Store helps you complete tasks at the right time using intelligent reminder suggestions and adaptive productivity tracking.
+    </p>
+
+    <div class="hero-buttons">
+
+      <a href="#" class="primary-btn">
+        Start Free
+      </a>
+
+      <a href="#" class="secondary-btn">
+        Watch Demo
+      </a>
+
+    </div>
+
+    <div class="task-input-box">
+
+      <input 
+        type="text" 
+        id="taskTitle" 
+        placeholder="Enter your task"
+      >
+
+      <input type="time" id="taskTime">
+
+      <select id="taskPriority">
+        <option>Low</option>
+        <option>Medium</option>
+        <option>High</option>
+      </select>
+
+      <select id="taskDeadline">
+        <option>Today</option>
+        <option>7 Days</option>
+        <option>30 Days</option>
+      </select>
+
+      <button id="addTaskBtn">
+        Add Task
+      </button>
+
+    </div>
+
+  </div>
+
+  <!-- RIGHT SIDE -->
+
+  <div class="mockup-card">
+
+    <h3>Today's Focus</h3>
+
+    <div id="taskList"></div>
+
+  </div>
+
+</div>
+
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
+
+
+

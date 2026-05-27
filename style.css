@@ -1,0 +1,283 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Inter',sans-serif;
+  background:#081225;
+  color:white;
+  overflow-x:hidden;
+}
+
+/* CONTAINER */
+
+.container{
+  width:90%;
+  max-width:1250px;
+  margin:auto;
+}
+
+/* HEADER */
+
+.header{
+  padding:24px 0;
+}
+
+.navbar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:2rem;
+  font-weight:700;
+}
+
+.nav-links{
+  display:flex;
+  list-style:none;
+  gap:35px;
+}
+
+.nav-links a{
+  text-decoration:none;
+  color:white;
+  font-weight:500;
+  transition:0.3s;
+}
+
+.nav-links a:hover{
+  color:#38bdf8;
+}
+
+.nav-btn{
+  padding:14px 28px;
+  border:none;
+  border-radius:14px;
+  background:#38bdf8;
+  color:white;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.nav-btn:hover{
+  transform:translateY(-2px);
+}
+
+/* HERO */
+
+.hero{
+  padding:40px 0 80px;
+}
+
+.hero-content{
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-start;
+  gap:50px;
+}
+
+/* LEFT SIDE */
+
+.hero-text{
+  max-width:620px;
+}
+
+.tag{
+  color:#38bdf8;
+  font-weight:600;
+  margin-bottom:20px;
+  font-size:1rem;
+}
+
+.hero-text{
+  width:58%;
+}
+.hero-description{
+  color:#cbd5e1;
+  line-height:1.8;
+  margin-bottom:40px;
+  font-size:1.05rem;
+}
+
+/* BUTTONS */
+
+.hero-buttons{
+  display:flex;
+  gap:16px;
+  margin-bottom:40px;
+}
+
+.primary-btn{
+  padding:16px 30px;
+  background:#38bdf8;
+  color:white;
+  border-radius:14px;
+  text-decoration:none;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.secondary-btn{
+  padding:16px 30px;
+  border:1px solid #334155;
+  border-radius:14px;
+  text-decoration:none;
+  color:white;
+  font-weight:600;
+  transition:0.3s;
+}
+
+.primary-btn:hover,
+.secondary-btn:hover{
+  transform:translateY(-2px);
+}
+
+/* TASK INPUT */
+
+.task-input-box{
+  display:grid;
+  grid-template-columns:1.5fr 1fr 1fr 1fr auto;
+  gap:14px;
+  align-items:center;
+}
+
+.task-input-box input,
+.task-input-box select{
+  background:#17233d;
+  color:white;
+  border:none;
+  padding:15px 16px;
+  border-radius:14px;
+  outline:none;
+  font-size:14px;
+  font-family:'Inter',sans-serif;
+}
+
+.task-input-box input::placeholder{
+  color:#94a3b8;
+}
+
+#addTaskBtn{
+  background:#38bdf8;
+  color:white;
+  border:none;
+  height:52px;
+  padding:0 24px;
+  border-radius:14px;
+  cursor:pointer;
+  font-weight:600;
+  transition:0.3s;
+}
+
+#addTaskBtn:hover{
+  transform:translateY(-2px);
+  opacity:0.9;
+}
+
+/* RIGHT SIDE CARD */
+
+.mockup-card{
+  width:42%;
+  background:#1b2742;
+  padding:28px;
+  border-radius:24px;
+  min-height:500px;
+}
+
+.mockup-card h3{
+  margin-bottom:26px;
+  font-size:1.5rem;
+}
+
+/* TASK LIST */
+
+#taskList{
+  display:flex;
+  flex-direction:column;
+  gap:18px;
+  max-height:470px;
+  overflow-y:auto;
+  padding-right:5px;
+}
+
+/* TASK CARD */
+
+.dynamic-task{
+  background:#0f172a;
+  padding:20px 22px;
+  border-radius:20px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  border:1px solid rgba(255,255,255,0.03);
+  transition:0.3s;
+}
+
+.dynamic-task:hover{
+  transform:translateY(-2px);
+  background:#12203a;
+}
+
+.dynamic-task p{
+  font-size:15px;
+  font-weight:500;
+}
+
+.dynamic-task span{
+  color:#38bdf8;
+  font-weight:700;
+}
+
+/* SCROLLBAR */
+
+#taskList::-webkit-scrollbar{
+  width:6px;
+}
+
+#taskList::-webkit-scrollbar-thumb{
+  background:#38bdf8;
+  border-radius:20px;
+}
+
+/* MOBILE */
+
+@media(max-width:1100px){
+
+  .hero-content{
+    grid-template-columns:1fr;
+  }
+
+  .mockup-card{
+    min-height:auto;
+  }
+
+}
+
+@media(max-width:768px){
+
+  .nav-links{
+    display:none;
+  }
+
+  .hero-text h1{
+    font-size:3rem;
+  }
+
+  .hero-buttons{
+    flex-wrap:wrap;
+  }
+
+  .task-input-box{
+    grid-template-columns:1fr;
+  }
+
+  #addTaskBtn{
+    width:100%;
+  }
+
+}
